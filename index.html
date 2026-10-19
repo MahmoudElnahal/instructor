@@ -3,193 +3,165 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Mahmoud El Nahal, AI Instructor</title>
-<meta name="description" content="Mahmoud El Nahal, Agentic AI & AI Automation Instructor. Samsung Innovation Campus, DEPI, NTI, MYSTRO GmbH, Orange Digital Center.">
-<meta property="og:title" content="Mahmoud El Nahal, Agentic AI & AI Automation Instructor">
-<meta property="og:description" content="200+ learners trained across SIC, DEPI, NTI, MYSTRO GmbH and Orange Digital Center.">
-<meta property="og:image" content="https://mahmoudelnahal.github.io/instructor/headshot.jpg">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%2314213d'/><text x='50' y='67' font-size='50' font-family='Georgia' text-anchor='middle' fill='%23d8ab5c'>MN</text></svg>">
+<title>Mahmoud El Nahal | AI Engineer &amp; Lecturer</title>
+<meta name="description" content="Mahmoud El Nahal, AI Engineer and Lecturer in Generative AI, AI Agents and Process Automation. Lecturer at DEPI and Samsung Innovation Campus.">
+<meta property="og:title" content="Mahmoud El Nahal | AI Engineer & Lecturer">
+<meta property="og:description" content="Generative AI, AI Agents and Process Automation. Engineer for government and enterprise clients; lecturer at DEPI and Samsung Innovation Campus.">
+<meta property="og:image" content="https://mahmoudelnahal.github.io/instructor/og.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230d1321'/><text x='50' y='66' font-size='46' font-family='Georgia' text-anchor='middle' fill='%23ffffff'>MN</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Public+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Source+Sans+3:wght@400;500;600&display=swap">
 <style>
-/* Layout: a lecturer's prospectus — one left-aligned reading column, a framed classroom photo, the teaching method drawn as an agent workflow. */
+/* Layout: a formal profile. White page, one strong portrait, two clearly separated roles (Engineering / Teaching), everything else in quiet ruled lists. */
 :root{
-  --paper:#f6f7f9; --surface:#ffffff; --ink:#121a2c; --muted:#56607a; --rule:#d8dde7;
-  --navy:#1b2a4a; --brass:#9a6b1f; --brass-soft:#f3ead9;
-  --f-display:"Newsreader",Georgia,"Times New Roman",serif;
-  --f-body:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
-  --f-mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
-  --max:1120px;
-  --band:#14213d; --band-fg:#f2f4f9; --band-muted:#b6bfd3; --band-rule:#2c3a5c; --gold:#d8ab5c;
+  --page:#ffffff; --alt:#f4f5f8; --ink:#0d1321; --text:#3f4859; --soft:#6b7385; --rule:#e1e4ea;
+  --accent:#1c3aa9; --accent-ink:#ffffff;
+  --serif:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --sans:"Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --max:1140px;
+  color-scheme:light;
 }
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --paper:#0e1320; --surface:#151c2d; --ink:#e8ebf2; --muted:#9aa3b8; --rule:#283149;
-  --navy:#c9d4ee; --brass:#d8ab5c; --brass-soft:#2a2414; --band:#0a0f1c; --band-rule:#222c44; color-scheme:dark}}
-:root[data-theme="dark"]{
-  --paper:#0e1320; --surface:#151c2d; --ink:#e8ebf2; --muted:#9aa3b8; --rule:#283149;
-  --navy:#c9d4ee; --brass:#d8ab5c; --brass-soft:#2a2414; --band:#0a0f1c; --band-rule:#222c44; color-scheme:dark}
-
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--paper);color:var(--ink);font:400 16px/1.65 var(--f-body);-webkit-font-smoothing:antialiased}
-img{max-width:100%}
-.wrap{max-width:var(--max);margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
-h1,h2,h3{font-family:var(--f-display);font-weight:500;color:var(--navy);text-wrap:balance;margin:0;line-height:1.12}
-h2{font-size:clamp(1.8rem,3.2vw,2.4rem)}
-h3{font-size:1.3rem}
-p{margin:0}
+body{margin:0;background:var(--page);color:var(--text);font:400 17px/1.65 var(--sans);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
 a{color:inherit}
-a:focus-visible,button:focus-visible{outline:2px solid var(--brass);outline-offset:3px;border-radius:2px}
-.label{font:500 .72rem/1.3 var(--f-mono);letter-spacing:.12em;text-transform:uppercase;color:var(--brass)}
-.muted{color:var(--muted)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+h1,h2,h3{margin:0;font-family:var(--serif);font-weight:600;color:var(--ink);line-height:1.15;text-wrap:balance}
+p{margin:0}
+.wrap{max-width:var(--max);margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.eyebrow{font:600 .78rem/1.3 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
 
-/* navy band: top bar + hero */
-.band{background:var(--band);color:var(--band-fg)}
-.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-block:20px;flex-wrap:wrap;border-bottom:1px solid var(--band-rule)}
-.mark{font:500 1.05rem var(--f-display);color:var(--band-fg);text-decoration:none;letter-spacing:.04em;text-transform:uppercase}
-.nav{display:flex;gap:24px;flex-wrap:wrap;font-size:.86rem}
-.nav a{text-decoration:none;color:var(--band-muted)}
-.nav a:hover{color:var(--band-fg)}
+/* header */
+header{border-bottom:1px solid var(--rule);position:sticky;top:0;background:var(--page);z-index:5}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-block:16px}
+.brand{font:600 1.08rem var(--serif);color:var(--ink);text-decoration:none}
+nav{display:flex;gap:28px;font-size:.93rem}
+nav a{text-decoration:none;color:var(--soft)}
+nav a:hover{color:var(--ink)}
 
-.hero .wrap{display:grid;grid-template-columns:1fr 340px;gap:64px;align-items:center;padding-block:72px 80px}
-.hero-text{display:flex;flex-direction:column;gap:20px;min-width:0}
-.hero .label{color:var(--gold)}
-.hero h1{font-size:clamp(2.6rem,6vw,4.3rem);font-weight:500;letter-spacing:-.01em;color:var(--band-fg)}
-.hero .role{font:400 clamp(1.15rem,2vw,1.45rem)/1.4 var(--f-display);font-style:italic;color:var(--gold)}
-.hero .lede{font-size:1.05rem;max-width:58ch;color:var(--band-muted)}
-.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:2px;font:500 .9rem var(--f-body);text-decoration:none;cursor:pointer;letter-spacing:.01em}
-.btn.primary{background:var(--gold);color:#14213d;border:1px solid var(--gold)}
-.btn.ghost{background:transparent;color:var(--band-fg);border:1px solid var(--band-muted)}
+/* hero */
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:center;padding-block:72px}
+.hero-copy{display:flex;flex-direction:column;gap:22px;min-width:0}
+.hero h1{font-size:clamp(2.6rem,5.6vw,4.2rem);letter-spacing:-.01em}
+.titles{display:flex;flex-wrap:wrap;gap:10px}
+.titles span{font:600 .9rem var(--sans);color:var(--ink);border:1px solid var(--ink);padding:6px 14px}
+.titles span:first-child{background:var(--ink);color:var(--page)}
+.hero .lede{font-size:1.1rem;max-width:56ch}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:4px}
+.btn{display:inline-block;padding:13px 24px;font:600 .95rem var(--sans);text-decoration:none;border:1px solid var(--accent)}
+.btn.solid{background:var(--accent);color:var(--accent-ink)}
+.btn.line{color:var(--accent)}
 .btn:hover{opacity:.9}
+.photo{margin:0;display:flex;flex-direction:column;gap:12px}
+.photo img{width:100%;height:auto;aspect-ratio:3/4;object-fit:cover}
+.photo figcaption{font-size:.85rem;color:var(--soft);border-left:2px solid var(--accent);padding-left:12px}
 
-figure{margin:0}
-.portrait{display:flex;flex-direction:column;gap:14px}
-.portrait .frame{padding:10px;border:1px solid var(--gold)}
-.portrait img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:50% 20%}
-.portrait figcaption{font:400 .74rem/1.5 var(--f-mono);color:var(--band-muted);letter-spacing:.04em;text-transform:uppercase;text-align:center}
-
-/* classroom photo */
-.classroom{display:flex;flex-direction:column;gap:12px}
-.classroom img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-position:50% 30%;object-fit:cover;border:1px solid var(--rule)}
-.classroom figcaption{font-size:.86rem;color:var(--muted)}
-
-/* facts */
-.facts{border-block:1px solid var(--rule);background:var(--surface)}
-.facts .wrap{display:grid;grid-template-columns:repeat(4,1fr);padding-block:0}
-.fact{padding:26px 20px 24px;border-left:1px solid var(--rule);display:flex;flex-direction:column;gap:4px}
-.fact:first-child{border-left:0;padding-left:0}
-.fact b{font:500 2.1rem/1 var(--f-display);color:var(--navy);font-variant-numeric:tabular-nums}
-.fact span{font-size:.86rem;color:var(--muted)}
+/* key figures */
+.figures{border-block:1px solid var(--rule)}
+.figures .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.fig{padding:28px 24px;border-left:1px solid var(--rule)}
+.fig:first-child{border-left:0;padding-left:0}
+.fig b{display:block;font:600 2.2rem/1.1 var(--serif);color:var(--ink);font-variant-numeric:tabular-nums}
+.fig span{font-size:.92rem;color:var(--soft)}
 
 /* sections */
-section.block .wrap{padding-block:80px 0;display:grid;grid-template-columns:240px 1fr;gap:48px}
-.side{display:flex;flex-direction:column;gap:12px;min-width:0}
-.side p{font-size:.92rem;color:var(--muted)}
-.main{min-width:0}
-section.block:last-of-type .wrap{padding-bottom:80px}
+section.sec{padding-block:88px}
+section.sec.alt{background:var(--alt)}
+.head{display:flex;flex-direction:column;gap:10px;margin-bottom:40px;max-width:680px}
+.head h2{font-size:clamp(1.9rem,3.4vw,2.6rem)}
+.head p{color:var(--soft)}
 
-/* method / workflow */
-.flow{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:4px}
-.node{position:relative;padding:18px 16px 18px;border:1px solid var(--rule);background:var(--surface);display:flex;flex-direction:column;gap:8px;min-width:0}
-.node + .node{border-left:0}
-.node .t{font:500 .7rem var(--f-mono);color:var(--brass);letter-spacing:.08em;text-transform:uppercase;display:flex;align-items:center;gap:8px}
-.node .t::before{content:"";width:8px;height:8px;border-radius:50%;border:1.5px solid var(--brass)}
-.node:first-child .t::before{background:var(--brass)}
-.node h3{font-size:1.12rem}
-.node p{font-size:.86rem;color:var(--muted);line-height:1.55}
-.node:not(:last-child)::after{content:"";position:absolute;right:-6px;top:24px;width:10px;height:10px;background:var(--surface);border-top:1px solid var(--rule);border-right:1px solid var(--rule);transform:rotate(45deg);z-index:1}
-.flow-note{margin-top:18px;font-size:.92rem;color:var(--muted);max-width:68ch}
+/* two roles */
+.roles{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.role{background:var(--page);border:1px solid var(--rule);padding:36px;display:flex;flex-direction:column;gap:16px;min-width:0}
+.role h3{font-size:1.6rem}
+.role ul{margin:6px 0 0;padding:0;list-style:none;display:flex;flex-direction:column}
+.role li{padding:12px 0;border-top:1px solid var(--rule);font-size:.98rem}
+.role li b{color:var(--ink);font-weight:600}
 
-/* courses */
-.courses{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border-top:1px solid var(--rule)}
-.course{padding:26px 28px 28px 0;border-bottom:1px solid var(--rule);display:flex;flex-direction:column;gap:10px;min-width:0}
-.course:nth-child(even){padding:26px 0 28px 28px;border-left:1px solid var(--rule)}
-.course .lvl{align-self:flex-start;font:500 .68rem var(--f-mono);letter-spacing:.08em;text-transform:uppercase;padding:3px 8px;border-radius:2px;background:var(--brass-soft);color:var(--brass)}
-.course p{font-size:.94rem;color:var(--muted)}
-.tools{display:flex;flex-wrap:wrap;gap:6px 14px;font:400 .78rem var(--f-mono);color:var(--navy)}
+/* lists */
+.list{border-top:1px solid var(--ink)}
+.row{display:grid;grid-template-columns:200px 1fr auto;gap:32px;padding:26px 0;border-bottom:1px solid var(--rule);align-items:baseline}
+.row .when{font-size:.9rem;color:var(--soft);font-variant-numeric:tabular-nums}
+.row h3{font-size:1.25rem}
+.row .org{font-weight:600;color:var(--accent);font-size:.95rem;margin:4px 0 8px}
+.row p{max-width:64ch}
+.row .metric{font:600 1.7rem/1 var(--serif);color:var(--ink);text-align:right;white-space:nowrap}
+.row .metric small{display:block;font:400 .8rem var(--sans);color:var(--soft);margin-top:6px}
+.tag{display:inline-block;margin-left:10px;font:600 .68rem var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--accent);border:1px solid var(--accent);padding:2px 7px;vertical-align:4px}
 
-/* record */
-.record{width:100%;border-collapse:collapse}
-.record td{padding:20px 0;border-bottom:1px solid var(--rule);vertical-align:top}
-.record tr:first-child td{border-top:1px solid var(--rule)}
-.record .when{width:190px;font:400 .82rem/1.6 var(--f-mono);color:var(--muted);padding-right:24px;font-variant-numeric:tabular-nums;white-space:nowrap}
-.record .org{font:500 1.15rem/1.3 var(--f-display);color:var(--navy)}
-.record .pos{font-size:.9rem;color:var(--brass);margin:2px 0 6px}
-.record .desc{font-size:.93rem;color:var(--muted);max-width:64ch}
-.now{display:inline-block;margin-left:8px;font:500 .64rem var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--paper);background:var(--navy);padding:2px 6px;border-radius:2px;vertical-align:3px}
+/* teaching table */
+.teach{width:100%;border-collapse:collapse;border-top:1px solid var(--ink)}
+.teach td{padding:20px 16px 20px 0;border-bottom:1px solid var(--rule);vertical-align:top}
+.teach td:first-child{width:38%}
+.teach .inst{font:600 1.12rem var(--serif);color:var(--ink)}
+.teach .when{color:var(--soft);font-size:.9rem;white-space:nowrap;text-align:right;padding-right:0}
 
-/* practice */
-.cases{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
-.case{background:var(--surface);border:1px solid var(--rule);padding:22px 24px;display:flex;flex-direction:column;gap:10px;min-width:0}
-.case .metric{font:500 1.9rem/1 var(--f-display);color:var(--brass)}
-.case .metric small{font:400 .8rem var(--f-body);color:var(--muted);margin-left:6px}
-.case p{font-size:.92rem;color:var(--muted)}
-.case .where{font:400 .74rem var(--f-mono);color:var(--muted);letter-spacing:.04em}
+/* expertise */
+.skills{display:grid;grid-template-columns:repeat(4,1fr);gap:32px}
+.skills h3{font:600 .8rem var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--accent);padding-bottom:12px;border-bottom:1px solid var(--ink)}
+.skills ul{list-style:none;margin:0;padding:0}
+.skills li{padding:9px 0;border-bottom:1px solid var(--rule);font-size:.96rem;color:var(--ink)}
 
 /* credentials */
-.creds{display:grid;grid-template-columns:1fr 1fr;gap:40px}
-.creds ul{list-style:none;margin:14px 0 0;padding:0}
-.creds li{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px solid var(--rule);font-size:.93rem}
-.creds li span:last-child{font:400 .8rem var(--f-mono);color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
-.degree{margin-top:14px;display:flex;flex-direction:column;gap:6px}
-.degree .org{font:500 1.25rem var(--f-display);color:var(--navy)}
+.creds{display:grid;grid-template-columns:1fr 1.4fr;gap:56px}
+.degree{display:flex;flex-direction:column;gap:6px}
+.degree h3{font-size:1.5rem}
+.certs{list-style:none;margin:0;padding:0;border-top:1px solid var(--ink)}
+.certs li{display:flex;justify-content:space-between;gap:20px;padding:12px 0;border-bottom:1px solid var(--rule);color:var(--ink)}
+.certs li span:last-child{color:var(--soft);font-variant-numeric:tabular-nums}
 
 /* contact */
-.contact .label{color:var(--gold)}
-.contact{background:var(--band);color:var(--band-fg);margin-top:80px}
-.contact .wrap{padding-block:64px;display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:start}
-.contact h2{color:var(--band-fg);font-size:clamp(1.9rem,3.6vw,2.7rem)}
-.contact p{opacity:.8;margin-top:14px;max-width:52ch}
-.lines{display:flex;flex-direction:column;border-top:1px solid color-mix(in srgb,var(--band-fg) 25%,transparent)}
-.line{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 0;border-bottom:1px solid color-mix(in srgb,var(--band-fg) 25%,transparent);min-width:0}
-.line .k{font:500 .68rem var(--f-mono);letter-spacing:.1em;text-transform:uppercase;opacity:.7;flex:0 0 76px}
-.line .v{flex:1;min-width:0;overflow-wrap:anywhere;user-select:all;font-size:.95rem}
-.line a.v{text-decoration:none;user-select:auto}
-.line a.v:hover{text-decoration:underline}
-.copy{background:transparent;border:1px solid color-mix(in srgb,var(--band-fg) 40%,transparent);color:var(--band-fg);font:500 .72rem var(--f-mono);padding:5px 10px;border-radius:2px;cursor:pointer}
-footer .wrap{padding-block:22px;font:400 .76rem var(--f-mono);color:var(--muted);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.contact{background:var(--ink);color:#c9cedb}
+.contact .wrap{padding-block:80px;display:grid;grid-template-columns:1fr 1fr;gap:56px}
+.contact h2{color:#ffffff;font-size:clamp(1.9rem,3.4vw,2.6rem)}
+.contact .eyebrow{color:#9fb2ff}
+.contact p{margin-top:16px;max-width:48ch}
+.cl{list-style:none;margin:0;padding:0;border-top:1px solid #2a3245}
+.cl li{display:flex;gap:16px;align-items:center;padding:16px 0;border-bottom:1px solid #2a3245}
+.cl .k{flex:0 0 90px;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:#8a93a8}
+.cl .v{flex:1;min-width:0;color:#ffffff;overflow-wrap:anywhere;text-decoration:none}
+.cl a.v:hover{text-decoration:underline}
+.copy{background:none;border:1px solid #4a5570;color:#ffffff;font:600 .75rem var(--sans);padding:5px 12px;cursor:pointer}
+footer{background:var(--ink);border-top:1px solid #2a3245;color:#8a93a8;font-size:.85rem}
+footer .wrap{padding-block:22px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
-@media (max-width:900px){
-  .hero .wrap{grid-template-columns:1fr;gap:40px;padding-block:48px 56px}
-  .portrait{max-width:300px;order:-1}
-  section.block .wrap{grid-template-columns:1fr;gap:22px;padding-top:60px}
-  .flow{grid-template-columns:1fr}
-  .node + .node{border-left:1px solid var(--rule);border-top:0}
-  .node:not(:last-child)::after{right:auto;left:24px;top:auto;bottom:-6px;transform:rotate(135deg)}
-  .contact .wrap{grid-template-columns:1fr}
+@media (max-width:960px){
+  .hero .wrap{grid-template-columns:1fr;gap:40px;padding-block:44px}
+  .photo{max-width:420px}
+  .roles,.creds,.contact .wrap{grid-template-columns:1fr}
+  .skills{grid-template-columns:1fr 1fr}
+  .row{grid-template-columns:1fr auto;gap:8px 24px}
+  .row .when{grid-column:1/-1}
 }
 @media (max-width:640px){
-  .facts .wrap{grid-template-columns:1fr 1fr}
-  .fact{padding:20px 14px 18px}
-  .fact:nth-child(odd){border-left:0;padding-left:0}
-  .fact:nth-child(n+3){border-top:1px solid var(--rule)}
-  .courses,.cases,.creds{grid-template-columns:1fr}
-  .course,.course:nth-child(even){padding:22px 0;border-left:0}
-  .record tr{display:flex;flex-direction:column;border-bottom:1px solid var(--rule);padding:16px 0}
-  .record td{border:0!important;padding:0}
-  .record .when{width:auto;padding:0 0 6px}
-  .nav a:not(:last-child){display:none}
-}
-@media (prefers-reduced-motion:no-preference){
-  .hero-text>*{animation:rise .6s ease both}
-  .hero-text>*:nth-child(2){animation-delay:.06s}.hero-text>*:nth-child(3){animation-delay:.12s}
-  .hero-text>*:nth-child(4){animation-delay:.18s}.hero-text>*:nth-child(5){animation-delay:.24s}
-  @keyframes rise{from{transform:translateY(8px)}to{transform:none}}
+  nav a:not(:last-child){display:none}
+  .figures .wrap{grid-template-columns:1fr 1fr}
+  .fig{padding:20px 12px}
+  .fig:nth-child(odd){border-left:0;padding-left:0}
+  .fig:nth-child(n+3){border-top:1px solid var(--rule)}
+  section.sec{padding-block:60px}
+  .role{padding:24px}
+  .row{grid-template-columns:1fr}
+  .row .metric{text-align:left}
+  .skills{grid-template-columns:1fr}
+  .teach tr{display:flex;flex-direction:column;border-bottom:1px solid var(--rule);padding:16px 0}
+  .teach td{border:0;padding:0;width:auto!important;text-align:left!important}
 }
 </style>
 </head>
 <body>
-<div class="band">
-<header class="top">
+
+<header>
   <div class="wrap">
-    <a class="mark" href="#top">M. El Nahal</a>
-    <nav class="nav" aria-label="Sections">
-      <a href="#method">Method</a>
-      <a href="#courses">Courses</a>
-      <a href="#record">Teaching record</a>
-      <a href="#practice">Industry work</a>
+    <a class="brand" href="#top">Mahmoud El Nahal</a>
+    <nav aria-label="Sections">
+      <a href="#profile">Profile</a>
+      <a href="#engineering">Engineering</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#expertise">Expertise</a>
       <a href="#contact">Contact</a>
     </nav>
   </div>
@@ -198,199 +170,159 @@ footer .wrap{padding-block:22px;font:400 .76rem var(--f-mono);color:var(--muted)
 <main id="top">
   <section class="hero">
     <div class="wrap">
-      <div class="hero-text">
-        <span class="label">Lecturer · Cairo, Egypt</span>
+      <div class="hero-copy">
+        <span class="eyebrow">Generative AI · AI Agents · Process Automation</span>
         <h1>Mahmoud El Nahal</h1>
-        <p class="role">Agentic AI &amp; AI Automation Instructor</p>
-        <p class="lede">I teach engineers, students and professionals to design AI agents and automate real business workflows with LLMs, RAG, n8n and UiPath. My lectures are built from systems I ship in production, including a national recruitment platform for the Ministry of Labor of Oman.</p>
-        <div class="cta">
-          <a class="btn primary" href="#contact">Invite me to teach</a>
-          <a class="btn ghost" href="#courses">View course tracks</a>
+        <div class="titles"><span>AI Engineer</span><span>Lecturer</span></div>
+        <p class="lede">I design and build AI agents and automation systems for government and enterprise clients, and I teach engineers and professionals to do the same. Lecturer at the Digital Egypt Pioneers Initiative (DEPI) and Samsung Innovation Campus.</p>
+        <div class="actions">
+          <a class="btn solid" href="#contact">Get in touch</a>
+          <a class="btn line" href="https://mahmoudelnahal.github.io/" target="_blank" rel="noopener">View project portfolio</a>
         </div>
       </div>
-      <figure class="portrait">
-        <div class="frame"><img src="headshot.jpg" alt="Portrait of Mahmoud El Nahal" width="560" height="700"></div>
-        <figcaption>Instructor · NTI, SIC, DEPI</figcaption>
+      <figure class="photo">
+        <img src="portrait.jpg" alt="Mahmoud El Nahal speaking at a podium at a technology event in Oman" width="720" height="960">
+        <figcaption>Speaking at a technology event in the Sultanate of Oman.</figcaption>
       </figure>
     </div>
   </section>
-</div>
 
-  <div class="facts">
+  <div class="figures">
     <div class="wrap">
-      <div class="fact"><b>200+</b><span>learners trained</span></div>
-      <div class="fact"><b>7</b><span>training institutions</span></div>
-      <div class="fact"><b>11</b><span>module Agentic AI curriculum designed</span></div>
-      <div class="fact"><b>2024</b><span>teaching since</span></div>
+      <div class="fig"><b>200+</b><span>learners trained and mentored</span></div>
+      <div class="fig"><b>40%</b><span>faster recruitment, Oman Ministry of Labor</span></div>
+      <div class="fig"><b>150+</b><span>leads processed daily by automation</span></div>
+      <div class="fig"><b>4</b><span>countries served: Egypt, Oman, KSA, UAE</span></div>
     </div>
   </div>
 
-  <section class="block" id="method">
+  <section class="sec alt" id="profile">
     <div class="wrap">
-      <div class="side">
-        <span class="label">Teaching method</span>
-        <h2>Every lecture runs like an agent workflow</h2>
+      <div class="head">
+        <span class="eyebrow">Profile</span>
+        <h2>Engineer and lecturer in one practice</h2>
+        <p>B.Sc. in Artificial Intelligence, Kafr El-Sheikh University. Every course I teach is drawn from systems I have built and run in production.</p>
       </div>
-      <div class="main">
-        <div class="flow" role="list">
-          <div class="node" role="listitem"><span class="t">Trigger</span><h3>Business problem</h3><p>Each session opens with a real task: a lead list, an inbox, a pile of CVs.</p></div>
-          <div class="node" role="listitem"><span class="t">Concept</span><h3>Core idea</h3><p>The model, tool or pattern needed, explained once and clearly.</p></div>
-          <div class="node" role="listitem"><span class="t">Live build</span><h3>Built in class</h3><p>I build the workflow live in n8n, Python or UiPath, mistakes included.</p></div>
-          <div class="node" role="listitem"><span class="t">Lab</span><h3>Hands-on lab</h3><p>Learners rebuild and extend it with guided checkpoints.</p></div>
-          <div class="node" role="listitem"><span class="t">Output</span><h3>Capstone</h3><p>A working agent or automation each learner can demo and keep.</p></div>
-        </div>
-        <p class="flow-note">Learners finish with deployable work, not slides. Projects are reviewed on the same criteria I use in client work: does it run unattended, handle errors, and save measurable time?</p>
-        <figure class="classroom" style="margin-top:36px">
-          <img src="classroom-wide.jpg" alt="Mahmoud El Nahal at the instructor's desk at NTI, a slide titled Role of a Data Analyst projected behind him" width="1170" height="740" loading="lazy">
-          <figcaption>Lecturing at the National Telecommunication Institute (NTI), Cairo: the analysis workflow from business question to presented findings.</figcaption>
-        </figure>
-      </div>
-    </div>
-  </section>
-
-  <section class="block" id="courses">
-    <div class="wrap">
-      <div class="side">
-        <span class="label">Course tracks</span>
-        <h2>What I teach</h2>
-        <p>Delivered as bootcamps, corporate workshops or university modules, in Arabic or English.</p>
-      </div>
-      <div class="main">
-        <div class="courses">
-          <article class="course">
-            <span class="lvl">Foundation</span>
-            <h3>Generative AI &amp; Prompt Engineering</h3>
-            <p>How LLMs work, structured prompting, evaluation, and using GenAI tools for everyday productivity.</p>
-            <div class="tools"><span>OpenAI API</span><span>Hugging Face</span><span>Transformers</span></div>
-          </article>
-          <article class="course">
-            <span class="lvl">Foundation</span>
-            <h3>Python for AI Development</h3>
-            <p>The Python a practitioner actually needs: APIs, data handling, and calling models from code.</p>
-            <div class="tools"><span>Python</span><span>Pandas</span><span>FastAPI</span><span>Streamlit</span></div>
-          </article>
-          <article class="course">
-            <span class="lvl">Intermediate</span>
-            <h3>Workflow Automation with n8n</h3>
-            <p>Webhooks, API orchestration, batching and error handling. Learners build a CRM-synced outreach pipeline end to end.</p>
-            <div class="tools"><span>n8n</span><span>Make</span><span>Zapier</span><span>Google Sheets</span></div>
-          </article>
-          <article class="course">
-            <span class="lvl">Intermediate</span>
-            <h3>RPA with UiPath</h3>
-            <p>Process automation with the RE Framework, plus an AI agent that reads, summarises and files incoming email.</p>
-            <div class="tools"><span>UiPath</span><span>RE Framework</span><span>Google Drive</span></div>
-          </article>
-          <article class="course">
-            <span class="lvl">Advanced</span>
-            <h3>RAG &amp; Knowledge Agents</h3>
-            <p>Chunking, embeddings and vector search. Learners build an assistant that answers from a live, refreshed document source.</p>
-            <div class="tools"><span>LangChain</span><span>Pinecone</span><span>FAISS</span><span>ChromaDB</span></div>
-          </article>
-          <article class="course">
-            <span class="lvl">Advanced</span>
-            <h3>Agentic AI &amp; Multi-Agent Systems</h3>
-            <p>Tool use, memory, planning and handoffs between agents, and how to put agents into production safely.</p>
-            <div class="tools"><span>AI agents</span><span>Tool calling</span><span>Docker</span></div>
-          </article>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="block" id="record">
-    <div class="wrap">
-      <div class="side">
-        <span class="label">Teaching record</span>
-        <h2>Where I have taught</h2>
-        <p>National programmes, training institutes and international platforms. Most recent first.</p>
-      </div>
-      <div class="main">
-        <table class="record">
-          <tbody>
-            <tr><td class="when">Sep 2026 – present</td><td><div class="org">Samsung Innovation Campus (SIC)<span class="now">Current</span></div><div class="pos">Agentic AI &amp; Automation Instructor</div><p class="desc">Teaching AI automation and AI agent development to programme participants.</p></td></tr>
-            <tr><td class="when">Sep 2026 – Oct 2026</td><td><div class="org">Digital Egypt Pioneers Initiative (DEPI)</div><div class="pos">AI Automation Instructor · AI &amp; Automation industry track</div><p class="desc">Trained participants on Generative AI tools, AI agent concepts and practical automation workflows.</p></td></tr>
-            <tr><td class="when">Jul 2024 – present</td><td><div class="org">National Telecommunication Institute (NTI)<span class="now">Current</span></div><div class="pos">Generative AI Instructor</div><p class="desc">Generative AI tools, Python for AI development and AI automation, taught through applied projects and real case studies.</p></td></tr>
-            <tr><td class="when">2024 – present</td><td><div class="org">MYSTRO GmbH, Germany (remote)</div><div class="pos">Agentic AI Instructor</div><p class="desc">Designed and delivered an 11-module curriculum on AI tools, prompt engineering, Agentic AI and workflow automation. Trained 100+ international students.</p></td></tr>
-            <tr><td class="when">Nov 2024 – Jan 2025</td><td><div class="org">AMIT Learning</div><div class="pos">Generative AI &amp; Automation Instructor</div><p class="desc">Guided professionals in building AI-powered dashboards, reports and automation solutions.</p></td></tr>
-            <tr><td class="when">Nov 2024 – Dec 2024</td><td><div class="org">Arabian Academy</div><div class="pos">AI Agent Instructor</div><p class="desc">Generative AI and automation sessions, mentoring students through practical projects.</p></td></tr>
-            <tr><td class="when">Jul 2024 – Oct 2024</td><td><div class="org">Orange Digital Center Egypt</div><div class="pos">AI Instructor</div><p class="desc">Designed and delivered AI training for 50+ students, mentoring projects from idea to working prototype.</p></td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </section>
-
-  <section class="block" id="practice">
-    <div class="wrap">
-      <div class="side">
-        <span class="label">Industry work</span>
-        <h2>What I build outside the classroom</h2>
-        <p>These production systems are the case studies my learners work through.</p>
-      </div>
-      <div class="main">
-        <div class="cases">
-          <article class="case">
-            <div class="metric">40%<small>faster recruitment</small></div>
-            <h3>National GenAI Applicant Tracking System</h3>
-            <p>Led the build for the Ministry of Labor of Oman: LLM CV summarisation and semantic job matching with vector embeddings.</p>
-            <span class="where">Success Technology LLC · Oman · 2025–2026</span>
-          </article>
-          <article class="case">
-            <div class="metric">150+<small>leads a day, unattended</small></div>
-            <h3>Self-running n8n outreach ecosystem</h3>
-            <p>16 dynamic email templates, smart batching, a live Brevo tracking webhook and GPT lead classification synced to a Sheets CRM.</p>
-            <span class="where">UniStep · Saudi Arabia · 2025–2026</span>
-          </article>
-          <article class="case">
-            <div class="metric">25%<small>shorter time-to-hire</small></div>
-            <h3>Company-wide ATS &amp; matching engine</h3>
-            <p>Internal recruitment platform with ML candidate recommendations and workforce analytics dashboards.</p>
-            <span class="where">Andalusia Group for Medical Services · Egypt · 2025</span>
-          </article>
-          <article class="case">
-            <div class="metric">RAG<small>refreshed hourly</small></div>
-            <h3>Knowledge agents &amp; legal chatbots</h3>
-            <p>An n8n + Pinecone assistant over live Drive documents, and an Egyptian Labor Law chatbot in progress with the Ministry of Labor.</p>
-            <span class="where">Independent &amp; government projects · 2026</span>
-          </article>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="block" id="credentials">
-    <div class="wrap">
-      <div class="side">
-        <span class="label">Credentials</span>
-        <h2>Education &amp; certification</h2>
-      </div>
-      <div class="main creds">
-        <div>
-          <span class="label">Education</span>
-          <div class="degree">
-            <span class="org">B.Sc. Artificial Intelligence</span>
-            <span class="muted">Kafr El-Sheikh University · Class of 2024 · GPA 3.51 / 4.0</span>
-          </div>
-          <span class="label" style="display:block;margin-top:34px">Languages</span>
+      <div class="roles">
+        <article class="role">
+          <span class="eyebrow">Engineering</span>
+          <h3>AI &amp; Automation Engineer</h3>
+          <p>Production GenAI systems, agent workflows and end-to-end automation for ministries and companies across the Gulf and Egypt.</p>
           <ul>
-            <li><span>Arabic</span><span>Native</span></li>
-            <li><span>English</span><span>Fluent</span></li>
+            <li><b>Success Technology LLC</b>, Oman: national AI recruitment system for the Ministry of Labor</li>
+            <li><b>UniStep</b>, Saudi Arabia: self-running n8n outreach and lead-intelligence platform</li>
+            <li><b>Andalusia Group</b>, Egypt: company-wide ATS and analytics</li>
           </ul>
-        </div>
-        <div>
-          <span class="label">Certifications</span>
+        </article>
+        <article class="role">
+          <span class="eyebrow">Teaching</span>
+          <h3>Generative AI &amp; Automation Lecturer</h3>
+          <p>Hands-on courses in Generative AI, AI agents, RAG and workflow automation for national programmes and training institutes.</p>
           <ul>
-            <li><span>NVIDIA · Building RAG Agents with LLMs</span><span>2026</span></li>
-            <li><span>Orange Digital Center · RPA Developer (UiPath)</span><span>2026</span></li>
-            <li><span>ITI · Advanced Generative AI</span><span>2025</span></li>
-            <li><span>Orange Digital Center · AI Diploma, 286 hours</span><span>2024</span></li>
-            <li><span>ITI · AI Summer Training</span><span>2024</span></li>
-            <li><span>Samsung Innovation Campus · AI Training</span><span>2023</span></li>
-            <li><span>Huawei · HCIA-AI</span><span>2022</span></li>
-            <li><span>Coursera · Machine Learning &amp; Deep Learning Specializations</span><span>2021</span></li>
+            <li><b>Digital Egypt Pioneers Initiative (DEPI)</b>: lecturer, AI &amp; Automation track</li>
+            <li><b>Samsung Innovation Campus</b>: AI agents &amp; automation instructor</li>
+            <li><b>Formerly</b> NTI, Orange Digital Center, AMIT Learning, MYSTRO</li>
           </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="engineering">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow">Engineering</span>
+        <h2>Selected work</h2>
+      </div>
+      <div class="list">
+        <div class="row">
+          <span class="when">Jul 2025 – Feb 2026</span>
+          <div><h3>National GenAI Applicant Tracking System</h3><div class="org">Success Technology LLC · Ministry of Labor, Oman</div><p>Led the build of an LLM-based recruitment platform with automated CV summarisation and semantic job matching using vector embeddings, plus an Omani labor-law assistant.</p></div>
+          <div class="metric">40%<small>faster recruitment</small></div>
         </div>
+        <div class="row">
+          <span class="when">Sep 2025 – Sep 2026</span>
+          <div><h3>Autonomous Outreach &amp; Lead Intelligence</h3><div class="org">UniStep · Saudi Arabia</div><p>A full n8n ecosystem: 16 dynamic email templates, smart batching, a live Brevo tracking webhook, GPT lead classification, and Firecrawl scraping, synced to a Google Sheets CRM.</p></div>
+          <div class="metric">150+<small>leads per day</small></div>
+        </div>
+        <div class="row">
+          <span class="when">Jan 2025 – Jun 2025</span>
+          <div><h3>Enterprise ATS &amp; Candidate Matching</h3><div class="org">Andalusia Group for Medical Services · Egypt</div><p>Company-wide applicant tracking system with ML recommendations and workforce analytics dashboards.</p></div>
+          <div class="metric">25%<small>shorter time-to-hire</small></div>
+        </div>
+        <div class="row">
+          <span class="when">2026</span>
+          <div><h3>Egyptian Labor Law Assistant<span class="tag">In progress</span></h3><div class="org">With Egypt's Ministry of Labor</div><p>A Generative AI legal assistant answering questions on Egyptian labor law, built on retrieval over the official legal texts.</p></div>
+          <div class="metric">RAG<small>legal assistant</small></div>
+        </div>
+        <div class="row">
+          <span class="when">Aug 2026 – Sep 2026</span>
+          <div><h3>UiPath RPA &amp; Email Agent</h3><div class="org">Orange Digital Center Egypt</div><p>RE Framework automations and an AI agent that reads incoming email, summarises it, and files the output to Google Drive.</p></div>
+          <div class="metric">RPA<small>UiPath</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec alt" id="teaching">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow">Teaching</span>
+        <h2>Lecturing and training</h2>
+        <p>Courses in Generative AI, AI agents, prompt engineering, RAG, n8n and UiPath automation, and Python for AI. Delivered in Arabic and English.</p>
+      </div>
+      <table class="teach">
+        <tbody>
+          <tr><td><div class="inst">Digital Egypt Pioneers Initiative (DEPI)</div></td><td>Lecturer, AI &amp; Automation industry track<span class="tag">Current</span></td><td class="when">2026</td></tr>
+          <tr><td><div class="inst">Samsung Innovation Campus (SIC)</div></td><td>Agentic AI &amp; Automation Instructor<span class="tag">Current</span></td><td class="when">Sep 2026 –</td></tr>
+          <tr><td><div class="inst">National Telecommunication Institute (NTI)</div></td><td>Generative AI Instructor</td><td class="when">2024 – 2026</td></tr>
+          <tr><td><div class="inst">MYSTRO</div></td><td>Agentic AI Instructor. Designed an 11-module curriculum; trained 100+ international students</td><td class="when">2024 – 2025</td></tr>
+          <tr><td><div class="inst">AMIT Learning</div></td><td>Generative AI &amp; Automation Instructor</td><td class="when">Nov 2024 – Jan 2025</td></tr>
+          <tr><td><div class="inst">Arabian Academy</div></td><td>AI Agent Instructor</td><td class="when">Nov – Dec 2024</td></tr>
+          <tr><td><div class="inst">Orange Digital Center Egypt</div></td><td>AI Instructor. Trained and mentored 50+ students</td><td class="when">Jul – Oct 2024</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="sec" id="expertise">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow">Expertise</span>
+        <h2>Technical stack</h2>
+      </div>
+      <div class="skills">
+        <div><h3>Generative AI &amp; Agents</h3><ul><li>LLMs &amp; OpenAI APIs</li><li>AI agents &amp; multi-agent systems</li><li>RAG pipelines</li><li>LangChain</li><li>Prompt engineering</li><li>Hugging Face</li></ul></div>
+        <div><h3>Automation &amp; RPA</h3><ul><li>n8n (self-hosted)</li><li>UiPath &amp; RE Framework</li><li>Make &amp; Zapier</li><li>Webhooks &amp; API orchestration</li><li>Firecrawl &amp; Jina AI</li><li>Brevo &amp; HubSpot</li></ul></div>
+        <div><h3>Machine Learning &amp; Data</h3><ul><li>Python, Pandas, SQL</li><li>PyTorch &amp; TensorFlow</li><li>Scikit-learn &amp; XGBoost</li><li>Semantic embeddings</li><li>Pinecone, FAISS, ChromaDB</li><li>Web scraping pipelines</li></ul></div>
+        <div><h3>Deployment</h3><ul><li>FastAPI &amp; Flask</li><li>Docker</li><li>Streamlit</li><li>Git &amp; GitHub</li><li>Google Workspace APIs</li><li>Dashboards &amp; reporting</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec alt" id="credentials">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow">Credentials</span>
+        <h2>Education &amp; certifications</h2>
+      </div>
+      <div class="creds">
+        <div class="degree">
+          <h3>B.Sc. Artificial Intelligence</h3>
+          <p>Faculty of Artificial Intelligence, Kafr El-Sheikh University</p>
+          <p style="color:var(--soft)">Class of 2024 · GPA 3.51 / 4.0</p>
+          <p style="margin-top:18px">Languages: Arabic (native), English (fluent)</p>
+        </div>
+        <ul class="certs">
+          <li><span>NVIDIA · Building RAG Agents with LLMs</span><span>2026</span></li>
+          <li><span>Orange Digital Center · RPA Developer (UiPath)</span><span>2026</span></li>
+          <li><span>ITI · Advanced Generative AI</span><span>2025</span></li>
+          <li><span>Orange Digital Center · AI Diploma (286 hours)</span><span>2024</span></li>
+          <li><span>ITI · AI Summer Training</span><span>2024</span></li>
+          <li><span>Samsung Innovation Campus · AI Training</span><span>2023</span></li>
+          <li><span>Huawei · HCIA-AI</span><span>2022</span></li>
+          <li><span>Coursera · Machine Learning and Deep Learning Specializations</span><span>2021</span></li>
+        </ul>
       </div>
     </div>
   </section>
@@ -399,33 +331,28 @@ footer .wrap{padding-block:22px;font:400 .76rem var(--f-mono);color:var(--muted)
 <section class="contact" id="contact">
   <div class="wrap">
     <div>
-      <span class="label">Contact</span>
-      <h2>Book a course, workshop or guest lecture</h2>
-      <p>Available for training programmes, corporate upskilling and university modules, on-site in Egypt or remote worldwide.</p>
+      <span class="eyebrow">Contact</span>
+      <h2>Engineering projects, courses and speaking</h2>
+      <p>Available for AI and automation engagements, training programmes, corporate workshops and university lectures. Based in Cairo; working on-site or remotely.</p>
     </div>
-    <div class="lines">
-      <div class="line"><span class="k">Email</span><span class="v" id="email">mahmoudelnahal2002@gmail.com</span><button class="copy" type="button" data-copy="email">Copy</button></div>
-      <div class="line"><span class="k">Phone</span><span class="v" id="phone">+20 102 614 8670</span><button class="copy" type="button" data-copy="phone">Copy</button></div>
-      <div class="line"><span class="k">LinkedIn</span><a class="v" href="https://www.linkedin.com/in/mahmoud-elnahal" target="_blank" rel="noopener">linkedin.com/in/mahmoud-elnahal</a></div>
-      <div class="line"><span class="k">GitHub</span><a class="v" href="https://github.com/MahmoudElnahal" target="_blank" rel="noopener">github.com/MahmoudElnahal</a></div>
-    </div>
+    <ul class="cl">
+      <li><span class="k">Email</span><span class="v" id="email">mahmoudelnahal2002@gmail.com</span><button class="copy" type="button" data-copy="email">Copy</button></li>
+      <li><span class="k">Phone</span><span class="v" id="phone">+20 102 614 8670</span><button class="copy" type="button" data-copy="phone">Copy</button></li>
+      <li><span class="k">LinkedIn</span><a class="v" href="https://www.linkedin.com/in/mahmoud-elnahal" target="_blank" rel="noopener">linkedin.com/in/mahmoud-elnahal</a></li>
+      <li><span class="k">GitHub</span><a class="v" href="https://github.com/MahmoudElnahal" target="_blank" rel="noopener">github.com/MahmoudElnahal</a></li>
+      <li><span class="k">Projects</span><a class="v" href="https://mahmoudelnahal.github.io/" target="_blank" rel="noopener">mahmoudelnahal.github.io</a></li>
+    </ul>
   </div>
 </section>
-
-<footer>
-  <div class="wrap">
-    <span>© 2026 Mahmoud El Nahal</span>
-    <span>Agentic AI &amp; AI Automation Instructor · Cairo</span>
-  </div>
-</footer>
+<footer><div class="wrap"><span>© 2026 Mahmoud El Nahal</span><span>AI Engineer &amp; Lecturer · Cairo, Egypt</span></div></footer>
 
 <script>
-document.querySelectorAll('[data-copy]').forEach(function(btn){
-  btn.addEventListener('click',function(){
-    var el=document.getElementById(btn.dataset.copy), text=el.textContent.trim();
-    function done(){btn.textContent='Copied';setTimeout(function(){btn.textContent='Copy'},1600)}
-    function fallback(){var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r);btn.textContent='Selected'}
-    try{navigator.clipboard.writeText(text).then(done,fallback)}catch(e){fallback()}
+document.querySelectorAll('[data-copy]').forEach(function(b){
+  b.addEventListener('click',function(){
+    var el=document.getElementById(b.dataset.copy);
+    function ok(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy'},1500)}
+    function sel(){var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r)}
+    try{navigator.clipboard.writeText(el.textContent.trim()).then(ok,sel)}catch(e){sel()}
   });
 });
 </script>
