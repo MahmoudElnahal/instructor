@@ -3,20 +3,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Mahmoud El Nahal | AI Engineer &amp; Lecturer</title>
-<meta name="description" content="Mahmoud El Nahal, AI Engineer and Lecturer in Generative AI, AI Agents and Process Automation. Lecturer at DEPI and Samsung Innovation Campus.">
-<meta property="og:title" content="Mahmoud El Nahal | AI Engineer & Lecturer">
-<meta property="og:description" content="Generative AI, AI Agents and Process Automation. Engineer for government and enterprise clients; lecturer at DEPI and Samsung Innovation Campus.">
+<title>Mahmoud El Nahal | AI Marketing Automation</title>
+<meta name="description" content="Mahmoud El Nahal, AI Marketing Automation Engineer & Instructor. Lead intelligence, AI lead qualification, CRM integration, WhatsApp follow-up and booking workflows. Full-time at Fana; instructor at DEPI.">
+<meta property="og:title" content="Mahmoud El Nahal | AI Marketing Automation Engineer & Instructor">
+<meta property="og:description" content="AI-powered marketing workflows from lead intelligence to CRM, follow-up and booking. Full-time at Fana; AI Marketing Automation instructor at DEPI.">
 <meta property="og:image" content="https://mahmoudelnahal.github.io/instructor/og.jpg">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230d1321'/><text x='50' y='66' font-size='46' font-family='Georgia' text-anchor='middle' fill='%23ffffff'>MN</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Source+Sans+3:wght@400;500;600&display=swap">
 <style>
-/* Layout: a formal profile. White page, one strong portrait, two clearly separated roles (Engineering / Teaching), everything else in quiet ruled lists. */
+/* Layout: a formal profile. White page, one strong portrait, the marketing pipeline drawn once as a stage sequence, everything else in quiet ruled lists. */
 :root{
   --page:#ffffff; --alt:#f4f5f8; --ink:#0d1321; --text:#3f4859; --soft:#6b7385; --rule:#e1e4ea;
-  --accent:#1c3aa9; --accent-ink:#ffffff;
+  --accent:#1c3aa9; --accent-ink:#ffffff; --accent-soft:#eef1fb;
   --serif:"Source Serif 4",Georgia,"Times New Roman",serif;
   --sans:"Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif;
   --max:1140px;
@@ -48,7 +48,8 @@ nav a:hover{color:var(--ink)}
 .titles{display:flex;flex-wrap:wrap;gap:10px}
 .titles span{font:600 .9rem var(--sans);color:var(--ink);border:1px solid var(--ink);padding:6px 14px}
 .titles span:first-child{background:var(--ink);color:var(--page)}
-.hero .lede{font-size:1.1rem;max-width:56ch}
+.hero .lede{font-size:1.1rem;max-width:58ch}
+.hero .now{font-size:1rem;color:var(--ink);border-left:2px solid var(--accent);padding-left:14px;max-width:58ch}
 .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:4px}
 .btn{display:inline-block;padding:13px 24px;font:600 .95rem var(--sans);text-decoration:none;border:1px solid var(--accent)}
 .btn.solid{background:var(--accent);color:var(--accent-ink)}
@@ -69,37 +70,58 @@ nav a:hover{color:var(--ink)}
 /* sections */
 section.sec{padding-block:88px}
 section.sec.alt{background:var(--alt)}
-.head{display:flex;flex-direction:column;gap:10px;margin-bottom:40px;max-width:680px}
+.head{display:flex;flex-direction:column;gap:10px;margin-bottom:40px;max-width:700px}
 .head h2{font-size:clamp(1.9rem,3.4vw,2.6rem)}
 .head p{color:var(--soft)}
 
-/* two roles */
-.roles{display:grid;grid-template-columns:1fr 1fr;gap:32px}
-.role{background:var(--page);border:1px solid var(--rule);padding:36px;display:flex;flex-direction:column;gap:16px;min-width:0}
-.role h3{font-size:1.6rem}
-.role ul{margin:6px 0 0;padding:0;list-style:none;display:flex;flex-direction:column}
-.role li{padding:12px 0;border-top:1px solid var(--rule);font-size:.98rem}
-.role li b{color:var(--ink);font-weight:600}
+/* pipeline */
+.pipe{display:grid;grid-template-columns:repeat(6,1fr);counter-reset:s;border:1px solid var(--rule);background:var(--page)}
+.stage{position:relative;padding:22px 18px 24px;border-left:1px solid var(--rule);display:flex;flex-direction:column;gap:8px;min-width:0}
+.stage:first-child{border-left:0}
+.stage::before{counter-increment:s;content:counter(s);font:600 .8rem var(--sans);color:var(--accent-ink);background:var(--accent);width:24px;height:24px;display:grid;place-items:center;border-radius:50%}
+.stage:not(:last-child)::after{content:"";position:absolute;right:-6px;top:28px;width:10px;height:10px;background:var(--page);border-top:1px solid var(--rule);border-right:1px solid var(--rule);transform:rotate(45deg);z-index:1}
+.stage h3{font-size:1.05rem}
+.stage p{font-size:.88rem;color:var(--soft);line-height:1.5}
+.pipe-note{margin-top:18px;font-size:.95rem;max-width:72ch}
+.pipe-note b{color:var(--ink)}
 
-/* lists */
-.list{border-top:1px solid var(--ink)}
-.row{display:grid;grid-template-columns:200px 1fr auto;gap:32px;padding:26px 0;border-bottom:1px solid var(--rule);align-items:baseline}
-.row .when{font-size:.9rem;color:var(--soft);font-variant-numeric:tabular-nums}
-.row h3{font-size:1.25rem}
-.row .org{font-weight:600;color:var(--accent);font-size:.95rem;margin:4px 0 8px}
-.row p{max-width:64ch}
-.row .metric{font:600 1.7rem/1 var(--serif);color:var(--ink);text-align:right;white-space:nowrap}
-.row .metric small{display:block;font:400 .8rem var(--sans);color:var(--soft);margin-top:6px}
+/* jobs */
+.jobs{border-top:1px solid var(--ink)}
+.job{display:grid;grid-template-columns:220px 1fr;gap:32px;padding:32px 0;border-bottom:1px solid var(--rule)}
+.job .meta{display:flex;flex-direction:column;gap:4px;font-size:.92rem;color:var(--soft)}
+.job .meta b{font:600 1.2rem var(--serif);color:var(--ink)}
+.job h3{font-size:1.3rem}
+.job ul{margin:12px 0 0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
+.job li::marker{color:var(--accent)}
 .tag{display:inline-block;margin-left:10px;font:600 .68rem var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--accent);border:1px solid var(--accent);padding:2px 7px;vertical-align:4px}
+.earlier{margin-top:40px}
+.earlier h3{font:600 .8rem var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--soft);margin-bottom:8px}
+.mini{list-style:none;margin:0;padding:0;border-top:1px solid var(--rule)}
+.mini li{display:grid;grid-template-columns:220px 1fr;gap:32px;padding:14px 0;border-bottom:1px solid var(--rule);font-size:.96rem}
+.mini li span:first-child{color:var(--soft)}
+.mini b{color:var(--ink);font-weight:600}
 
-/* teaching table */
-.teach{width:100%;border-collapse:collapse;border-top:1px solid var(--ink)}
-.teach td{padding:20px 16px 20px 0;border-bottom:1px solid var(--rule);vertical-align:top}
+/* DEPI */
+.depi{display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:start}
+.panel{background:var(--page);border:1px solid var(--rule);padding:36px;min-width:0}
+.panel h3{font-size:1.5rem;margin-top:8px}
+.panel .sub{color:var(--accent);font-weight:600;margin-top:6px}
+.panel > p{margin-top:14px}
+.learn{list-style:none;margin:22px 0 0;padding:0;counter-reset:l}
+.learn li{display:grid;grid-template-columns:34px 1fr;padding:11px 0;border-top:1px solid var(--rule);color:var(--ink)}
+.learn li::before{counter-increment:l;content:counter(l,decimal-leading-zero);font:600 .82rem var(--sans);color:var(--accent);padding-top:3px}
+.approach{background:var(--ink);color:#c9cedb;padding:36px;display:flex;flex-direction:column;gap:14px}
+.approach h3{color:#ffffff;font-size:1.4rem}
+.approach .eyebrow{color:#9fb2ff}
+.teach{width:100%;border-collapse:collapse;border-top:1px solid var(--ink);margin-top:48px}
+.teach td{padding:18px 16px 18px 0;border-bottom:1px solid var(--rule);vertical-align:top}
 .teach td:first-child{width:38%}
-.teach .inst{font:600 1.12rem var(--serif);color:var(--ink)}
+.teach .inst{font:600 1.08rem var(--serif);color:var(--ink)}
 .teach .when{color:var(--soft);font-size:.9rem;white-space:nowrap;text-align:right;padding-right:0}
 
 /* expertise */
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:48px}
+.chips span{border:1px solid var(--accent);color:var(--accent);background:var(--accent-soft);padding:7px 14px;font-weight:600;font-size:.93rem}
 .skills{display:grid;grid-template-columns:repeat(4,1fr);gap:32px}
 .skills h3{font:600 .8rem var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--accent);padding-bottom:12px;border-bottom:1px solid var(--ink)}
 .skills ul{list-style:none;margin:0;padding:0}
@@ -128,13 +150,18 @@ section.sec.alt{background:var(--alt)}
 footer{background:var(--ink);border-top:1px solid #2a3245;color:#8a93a8;font-size:.85rem}
 footer .wrap{padding-block:22px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
+@media (max-width:1000px){
+  .pipe{grid-template-columns:repeat(3,1fr)}
+  .stage:nth-child(4){border-left:0}
+  .stage:nth-child(n+4){border-top:1px solid var(--rule)}
+  .stage:nth-child(3)::after{display:none}
+}
 @media (max-width:960px){
   .hero .wrap{grid-template-columns:1fr;gap:40px;padding-block:44px}
   .photo{max-width:420px}
-  .roles,.creds,.contact .wrap{grid-template-columns:1fr}
+  .depi,.creds,.contact .wrap{grid-template-columns:1fr}
   .skills{grid-template-columns:1fr 1fr}
-  .row{grid-template-columns:1fr auto;gap:8px 24px}
-  .row .when{grid-column:1/-1}
+  .job,.mini li{grid-template-columns:1fr;gap:8px}
 }
 @media (max-width:640px){
   nav a:not(:last-child){display:none}
@@ -143,9 +170,11 @@ footer .wrap{padding-block:22px;display:flex;justify-content:space-between;gap:1
   .fig:nth-child(odd){border-left:0;padding-left:0}
   .fig:nth-child(n+3){border-top:1px solid var(--rule)}
   section.sec{padding-block:60px}
-  .role{padding:24px}
-  .row{grid-template-columns:1fr}
-  .row .metric{text-align:left}
+  .pipe{grid-template-columns:1fr}
+  .stage{border-left:0;border-top:1px solid var(--rule)}
+  .stage:first-child{border-top:0}
+  .stage::after{display:none}
+  .panel,.approach{padding:24px}
   .skills{grid-template-columns:1fr}
   .teach tr{display:flex;flex-direction:column;border-bottom:1px solid var(--rule);padding:16px 0}
   .teach td{border:0;padding:0;width:auto!important;text-align:left!important}
@@ -158,8 +187,8 @@ footer .wrap{padding-block:22px;display:flex;justify-content:space-between;gap:1
   <div class="wrap">
     <a class="brand" href="#top">Mahmoud El Nahal</a>
     <nav aria-label="Sections">
-      <a href="#profile">Profile</a>
-      <a href="#engineering">Engineering</a>
+      <a href="#pipeline">Pipeline</a>
+      <a href="#work">Work</a>
       <a href="#teaching">Teaching</a>
       <a href="#expertise">Expertise</a>
       <a href="#contact">Contact</a>
@@ -171,10 +200,11 @@ footer .wrap{padding-block:22px;display:flex;justify-content:space-between;gap:1
   <section class="hero">
     <div class="wrap">
       <div class="hero-copy">
-        <span class="eyebrow">Generative AI · AI Agents · Process Automation</span>
+        <span class="eyebrow">AI Marketing Automation</span>
         <h1>Mahmoud El Nahal</h1>
-        <div class="titles"><span>AI Engineer</span><span>Lecturer</span></div>
-        <p class="lede">I design and build AI agents and automation systems for government and enterprise clients, and I teach engineers and professionals to do the same. Lecturer at the Digital Egypt Pioneers Initiative (DEPI) and Samsung Innovation Campus.</p>
+        <div class="titles"><span>AI Marketing Automation Engineer</span><span>Instructor</span></div>
+        <p class="lede">I build AI-powered marketing workflows that connect lead intelligence, personalized outreach, CRM management, customer follow-up, and booking journeys. Alongside my engineering work, I teach professionals how to build practical marketing automation systems using AI agents and workflow automation.</p>
+        <p class="now">Currently working full-time at Fana and delivering applied AI marketing automation training through the Digital Egypt Pioneers Initiative (DEPI).</p>
         <div class="actions">
           <a class="btn solid" href="#contact">Get in touch</a>
           <a class="btn line" href="https://mahmoudelnahal.github.io/" target="_blank" rel="noopener">View project portfolio</a>
@@ -189,77 +219,71 @@ footer .wrap{padding-block:22px;display:flex;justify-content:space-between;gap:1
 
   <div class="figures">
     <div class="wrap">
+      <div class="fig"><b>150+</b><span>leads handled daily by automated outreach</span></div>
+      <div class="fig"><b>16</b><span>dynamic email templates in one campaign system</span></div>
       <div class="fig"><b>200+</b><span>learners trained and mentored</span></div>
-      <div class="fig"><b>40%</b><span>faster recruitment, Oman Ministry of Labor</span></div>
-      <div class="fig"><b>150+</b><span>leads processed daily by automation</span></div>
-      <div class="fig"><b>4</b><span>countries served: Egypt, Oman, KSA, UAE</span></div>
+      <div class="fig"><b>4</b><span>countries served: Egypt, Saudi Arabia, Oman, UAE</span></div>
     </div>
   </div>
 
-  <section class="sec alt" id="profile">
+  <section class="sec alt" id="pipeline">
     <div class="wrap">
       <div class="head">
-        <span class="eyebrow">Profile</span>
-        <h2>Engineer and lecturer in one practice</h2>
-        <p>B.Sc. in Artificial Intelligence, Kafr El-Sheikh University. Every course I teach is drawn from systems I have built and run in production.</p>
+        <span class="eyebrow">What I build and teach</span>
+        <h2>From first lead to confirmed booking</h2>
+        <p>The same workflow runs in my client work and in my classroom. Each stage hands clean data to the next, so the team spends its time on the right customers.</p>
       </div>
-      <div class="roles">
-        <article class="role">
-          <span class="eyebrow">Engineering</span>
-          <h3>AI &amp; Automation Engineer</h3>
-          <p>Production GenAI systems, agent workflows and end-to-end automation for ministries and companies across the Gulf and Egypt.</p>
-          <ul>
-            <li><b>Success Technology LLC</b>, Oman: national AI recruitment system for the Ministry of Labor</li>
-            <li><b>UniStep</b>, Saudi Arabia: self-running n8n outreach and lead-intelligence platform</li>
-            <li><b>Andalusia Group</b>, Egypt: company-wide ATS and analytics</li>
-          </ul>
-        </article>
-        <article class="role">
-          <span class="eyebrow">Teaching</span>
-          <h3>Generative AI &amp; Automation Lecturer</h3>
-          <p>Hands-on courses in Generative AI, AI agents, RAG and workflow automation for national programmes and training institutes.</p>
-          <ul>
-            <li><b>Digital Egypt Pioneers Initiative (DEPI)</b>: lecturer, AI &amp; Automation track</li>
-            <li><b>Samsung Innovation Campus</b>: AI agents &amp; automation instructor</li>
-            <li><b>Formerly</b> NTI, Orange Digital Center, AMIT Learning, MYSTRO</li>
-          </ul>
-        </article>
+      <div class="pipe" role="list">
+        <div class="stage" role="listitem"><h3>Lead intelligence</h3><p>Find and enrich prospects from websites, forms and campaigns.</p></div>
+        <div class="stage" role="listitem"><h3>Capture &amp; survey</h3><p>Collect leads and their answers through forms and surveys.</p></div>
+        <div class="stage" role="listitem"><h3>AI qualification</h3><p>AI reads responses and classifies interest, fit and readiness.</p></div>
+        <div class="stage" role="listitem"><h3>CRM</h3><p>Every lead, score and interaction is written to the CRM.</p></div>
+        <div class="stage" role="listitem"><h3>Follow-up</h3><p>Personalized email and WhatsApp messages based on each response.</p></div>
+        <div class="stage" role="listitem"><h3>Booking</h3><p>Qualified customers are guided to book, with reminders.</p></div>
       </div>
+      <p class="pipe-note"><b>Humans stay in the loop.</b> Uncertain or incomplete responses are routed to a person for review instead of being scored automatically.</p>
     </div>
   </section>
 
-  <section class="sec" id="engineering">
+  <section class="sec" id="work">
     <div class="wrap">
       <div class="head">
-        <span class="eyebrow">Engineering</span>
-        <h2>Selected work</h2>
+        <span class="eyebrow">Engineering &amp; marketing automation</span>
+        <h2>Experience</h2>
       </div>
-      <div class="list">
-        <div class="row">
-          <span class="when">Jul 2025 – Feb 2026</span>
-          <div><h3>National GenAI Applicant Tracking System</h3><div class="org">Success Technology LLC · Ministry of Labor, Oman</div><p>Led the build of an LLM-based recruitment platform with automated CV summarisation and semantic job matching using vector embeddings, plus an Omani labor-law assistant.</p></div>
-          <div class="metric">40%<small>faster recruitment</small></div>
-        </div>
-        <div class="row">
-          <span class="when">Sep 2025 – Sep 2026</span>
-          <div><h3>Autonomous Outreach &amp; Lead Intelligence</h3><div class="org">UniStep · Saudi Arabia</div><p>A full n8n ecosystem: 16 dynamic email templates, smart batching, a live Brevo tracking webhook, GPT lead classification, and Firecrawl scraping, synced to a Google Sheets CRM.</p></div>
-          <div class="metric">150+<small>leads per day</small></div>
-        </div>
-        <div class="row">
-          <span class="when">Jan 2025 – Jun 2025</span>
-          <div><h3>Enterprise ATS &amp; Candidate Matching</h3><div class="org">Andalusia Group for Medical Services · Egypt</div><p>Company-wide applicant tracking system with ML recommendations and workforce analytics dashboards.</p></div>
-          <div class="metric">25%<small>shorter time-to-hire</small></div>
-        </div>
-        <div class="row">
-          <span class="when">2026</span>
-          <div><h3>Egyptian Labor Law Assistant<span class="tag">In progress</span></h3><div class="org">With Egypt's Ministry of Labor</div><p>A Generative AI legal assistant answering questions on Egyptian labor law, built on retrieval over the official legal texts.</p></div>
-          <div class="metric">RAG<small>legal assistant</small></div>
-        </div>
-        <div class="row">
-          <span class="when">Aug 2026 – Sep 2026</span>
-          <div><h3>UiPath RPA &amp; Email Agent</h3><div class="org">Orange Digital Center Egypt</div><p>RE Framework automations and an AI agent that reads incoming email, summarises it, and files the output to Google Drive.</p></div>
-          <div class="metric">RPA<small>UiPath</small></div>
-        </div>
+      <div class="jobs">
+        <article class="job">
+          <div class="meta"><b>Fana</b><span>Full-time</span><span>Oct 2026 – Present</span></div>
+          <div>
+            <h3>AI &amp; Marketing Automation<span class="tag">Current</span></h3>
+            <ul>
+              <li>Build connected marketing workflows covering lead intelligence, outreach, CRM integration, follow-up, and booking journeys.</li>
+              <li>Connect lead information and customer interactions to the CRM to support coordinated follow-up.</li>
+              <li>Automate WhatsApp communication as part of customer engagement and booking workflows.</li>
+              <li>Use AI to support lead qualification and help teams prioritize relevant prospects.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="job">
+          <div class="meta"><b>UniStep</b><span>Saudi Arabia · Contract</span><span>Sep 2025 – Sep 2026</span></div>
+          <div>
+            <h3>AI &amp; Automation Engineer</h3>
+            <ul>
+              <li>Built an n8n marketing outreach ecosystem processing 150+ leads daily, with 16 dynamic HTML email templates and Google Sheets CRM synchronization.</li>
+              <li>Implemented smart batching and workflow controls to manage automated campaign execution.</li>
+              <li>Integrated Brevo tracking webhooks to capture email delivery and engagement events and update lead records.</li>
+              <li>Connected campaign activity with CRM workflows to support lead management and follow-up.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+      <div class="earlier">
+        <h3>Earlier AI engineering</h3>
+        <ul class="mini">
+          <li><span>Jul 2025 – Feb 2026</span><span><b>Success Technology LLC, Oman</b>: GenAI recruitment system for the Ministry of Labor (40% faster recruitment)</span></li>
+          <li><span>Jan 2025 – Jun 2025</span><span><b>Andalusia Group for Medical Services, Egypt</b>: company-wide ATS and performance analytics dashboards</span></li>
+          <li><span>Aug 2026 – Sep 2026</span><span><b>Orange Digital Center Egypt</b>: UiPath RPA and an AI email-summarization agent</span></li>
+        </ul>
       </div>
     </div>
   </section>
@@ -267,19 +291,40 @@ footer .wrap{padding-block:22px;display:flex;justify-content:space-between;gap:1
   <section class="sec alt" id="teaching">
     <div class="wrap">
       <div class="head">
-        <span class="eyebrow">Teaching</span>
-        <h2>Lecturing and training</h2>
-        <p>Courses in Generative AI, AI agents, prompt engineering, RAG, n8n and UiPath automation, and Python for AI. Delivered in Arabic and English.</p>
+        <span class="eyebrow">Teaching &amp; training</span>
+        <h2>Teaching marketing teams to automate</h2>
+        <p>Delivered in Arabic, with English tooling terms.</p>
+      </div>
+      <div class="depi">
+        <div class="panel">
+          <span class="eyebrow">Digital Egypt Pioneers Initiative (DEPI)</span>
+          <h3>AI Automation Instructor</h3>
+          <div class="sub">Applied focus: AI Marketing Automation</div>
+          <p>Deliver practical training on using AI agents and automation to support marketing and customer engagement workflows. Participants learn how to:</p>
+          <ol class="learn">
+            <li>Collect and organize leads through forms and surveys.</li>
+            <li>Connect customer information to a CRM.</li>
+            <li>Use AI to analyze survey responses and summarize customer needs.</li>
+            <li>Classify leads by expressed interest, business fit, and readiness for follow-up.</li>
+            <li>Route uncertain or incomplete responses for human review.</li>
+            <li>Build personalized follow-up workflows based on customer responses.</li>
+            <li>Connect lead qualification and customer communication with booking workflows.</li>
+          </ol>
+        </div>
+        <div class="approach">
+          <span class="eyebrow">Practical teaching approach</span>
+          <h3>Every session ends with a working workflow</h3>
+          <p>My training connects real marketing tasks with working automation systems. Learners build workflows that collect information, interpret customer responses, update business tools, and trigger relevant next steps.</p>
+        </div>
       </div>
       <table class="teach">
         <tbody>
-          <tr><td><div class="inst">Digital Egypt Pioneers Initiative (DEPI)</div></td><td>Lecturer, AI &amp; Automation industry track<span class="tag">Current</span></td><td class="when">2026</td></tr>
           <tr><td><div class="inst">Samsung Innovation Campus (SIC)</div></td><td>Agentic AI &amp; Automation Instructor<span class="tag">Current</span></td><td class="when">Sep 2026 –</td></tr>
           <tr><td><div class="inst">National Telecommunication Institute (NTI)</div></td><td>Generative AI Instructor</td><td class="when">2024 – 2026</td></tr>
-          <tr><td><div class="inst">MYSTRO</div></td><td>Agentic AI Instructor. Designed an 11-module curriculum; trained 100+ international students</td><td class="when">2024 – 2025</td></tr>
+          <tr><td><div class="inst">MYSTRO</div></td><td>Agentic AI Instructor. 11-module curriculum; 100+ international students</td><td class="when">2024 – 2025</td></tr>
           <tr><td><div class="inst">AMIT Learning</div></td><td>Generative AI &amp; Automation Instructor</td><td class="when">Nov 2024 – Jan 2025</td></tr>
           <tr><td><div class="inst">Arabian Academy</div></td><td>AI Agent Instructor</td><td class="when">Nov – Dec 2024</td></tr>
-          <tr><td><div class="inst">Orange Digital Center Egypt</div></td><td>AI Instructor. Trained and mentored 50+ students</td><td class="when">Jul – Oct 2024</td></tr>
+          <tr><td><div class="inst">Orange Digital Center Egypt</div></td><td>AI Instructor. 50+ students mentored</td><td class="when">Jul – Oct 2024</td></tr>
         </tbody>
       </table>
     </div>
@@ -288,14 +333,17 @@ footer .wrap{padding-block:22px;display:flex;justify-content:space-between;gap:1
   <section class="sec" id="expertise">
     <div class="wrap">
       <div class="head">
-        <span class="eyebrow">Expertise</span>
-        <h2>Technical stack</h2>
+        <span class="eyebrow">Core expertise</span>
+        <h2>Marketing automation, end to end</h2>
+      </div>
+      <div class="chips">
+        <span>AI Marketing Automation</span><span>AI Agents</span><span>Lead Intelligence</span><span>Lead Qualification</span><span>Survey Analysis</span><span>Personalized Outreach</span><span>CRM Integration</span><span>Customer Follow-up</span><span>Booking Workflows</span><span>WhatsApp Automation</span>
       </div>
       <div class="skills">
-        <div><h3>Generative AI &amp; Agents</h3><ul><li>LLMs &amp; OpenAI APIs</li><li>AI agents &amp; multi-agent systems</li><li>RAG pipelines</li><li>LangChain</li><li>Prompt engineering</li><li>Hugging Face</li></ul></div>
-        <div><h3>Automation &amp; RPA</h3><ul><li>n8n (self-hosted)</li><li>UiPath &amp; RE Framework</li><li>Make &amp; Zapier</li><li>Webhooks &amp; API orchestration</li><li>Firecrawl &amp; Jina AI</li><li>Brevo &amp; HubSpot</li></ul></div>
-        <div><h3>Machine Learning &amp; Data</h3><ul><li>Python, Pandas, SQL</li><li>PyTorch &amp; TensorFlow</li><li>Scikit-learn &amp; XGBoost</li><li>Semantic embeddings</li><li>Pinecone, FAISS, ChromaDB</li><li>Web scraping pipelines</li></ul></div>
-        <div><h3>Deployment</h3><ul><li>FastAPI &amp; Flask</li><li>Docker</li><li>Streamlit</li><li>Git &amp; GitHub</li><li>Google Workspace APIs</li><li>Dashboards &amp; reporting</li></ul></div>
+        <div><h3>Automation</h3><ul><li>n8n (self-hosted)</li><li>Make &amp; Zapier</li><li>APIs &amp; webhooks</li><li>UiPath</li></ul></div>
+        <div><h3>Marketing &amp; CRM</h3><ul><li>Brevo email campaigns</li><li>HubSpot</li><li>Google Sheets CRM</li><li>WhatsApp messaging</li></ul></div>
+        <div><h3>AI</h3><ul><li>LLMs &amp; OpenAI APIs</li><li>AI agents &amp; tool calling</li><li>RAG</li><li>Prompt engineering</li></ul></div>
+        <div><h3>Data</h3><ul><li>Firecrawl &amp; Jina AI scraping</li><li>Python &amp; SQL</li><li>Lead scoring &amp; segmentation</li><li>KPI dashboards</li></ul></div>
       </div>
     </div>
   </section>
@@ -318,7 +366,6 @@ footer .wrap{padding-block:22px;display:flex;justify-content:space-between;gap:1
           <li><span>Orange Digital Center · RPA Developer (UiPath)</span><span>2026</span></li>
           <li><span>ITI · Advanced Generative AI</span><span>2025</span></li>
           <li><span>Orange Digital Center · AI Diploma (286 hours)</span><span>2024</span></li>
-          <li><span>ITI · AI Summer Training</span><span>2024</span></li>
           <li><span>Samsung Innovation Campus · AI Training</span><span>2023</span></li>
           <li><span>Huawei · HCIA-AI</span><span>2022</span></li>
           <li><span>Coursera · Machine Learning and Deep Learning Specializations</span><span>2021</span></li>
@@ -332,8 +379,8 @@ footer .wrap{padding-block:22px;display:flex;justify-content:space-between;gap:1
   <div class="wrap">
     <div>
       <span class="eyebrow">Contact</span>
-      <h2>Engineering projects, courses and speaking</h2>
-      <p>Available for AI and automation engagements, training programmes, corporate workshops and university lectures. Based in Cairo; working on-site or remotely.</p>
+      <h2>Workshops, courses and marketing automation</h2>
+      <p>Available for AI marketing automation training, corporate workshops and team programmes. Based in Cairo; delivering on-site or remotely.</p>
     </div>
     <ul class="cl">
       <li><span class="k">Email</span><span class="v" id="email">mahmoudelnahal2002@gmail.com</span><button class="copy" type="button" data-copy="email">Copy</button></li>
@@ -344,7 +391,7 @@ footer .wrap{padding-block:22px;display:flex;justify-content:space-between;gap:1
     </ul>
   </div>
 </section>
-<footer><div class="wrap"><span>© 2026 Mahmoud El Nahal</span><span>AI Engineer &amp; Lecturer · Cairo, Egypt</span></div></footer>
+<footer><div class="wrap"><span>© 2026 Mahmoud El Nahal</span><span>AI Marketing Automation Engineer &amp; Instructor · Cairo, Egypt</span></div></footer>
 
 <script>
 document.querySelectorAll('[data-copy]').forEach(function(b){
